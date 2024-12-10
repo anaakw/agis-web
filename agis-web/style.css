@@ -1,0 +1,248 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Espaço para o conteúdo abaixo do cabeçalho fixo */
+.content-container {
+    margin-top: 100px; /* Ajustado conforme necessário */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do título "Nossos Seguros" */
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px; /* Espaço extra entre o título e o conteúdo anterior */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo das Seções de Seguro */
+.insurance-section {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out; /* Adiciona a transição para o efeito de zoom */
+}
+
+.insurance-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.insurance-section img {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+/* Efeito de zoom ao passar o mouse sobre as seções de seguro */
+.insurance-section:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho da seção */
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #4c8eaf;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .insurance-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .insurance-section img {
+        margin: 20px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .insurance-text {
+        padding-right: 0;
+    }
+}
+
+/* Estilos adicionais */
+.cta-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #28a5a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+.cta-button:hover {
+    background-color: #3d9bd9;
+}
+
+/* Ajustes do Cabeçalho */
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 60px; /* Ajuste conforme necessário */
+    overflow: hidden;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 0;
+}
+
+/* Estilo específico para o formulário de Cadastro de Cliente */
+.form-container {
+    margin-top: 120px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    /* width: 100%; */
+    padding: 10px;
+    background-color: #4c8eaf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3b7397;
+}
+
+/* Responsividade do Formulário de Cadastro */
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+/* Estilo da seção de seguros */
+.insurance-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px; /* Espaço entre o cabeçalho e a seção de seguros */
+    background-color: #fff; /* Adiciona um fundo branco à seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.insurance-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #3089c6; /* Adiciona uma linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.insurance-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Outros estilos mantidos como antes */
+
+
+
+
+
+/* Estilo para as imagens de seguro */
+.insurance-image {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 400px; /* Define uma largura máxima para as imagens */
+    margin: 10px 0; /* Adiciona uma margem superior e inferior */
+}
+
+/* Estilo para o contêiner de cada seção de seguro */
+.insurance-section {
+    display: flex; /* Usa Flexbox para alinhar texto e imagem */
+    align-items: center; /* Alinha itens ao centro */
+    justify-content: space-between; /* Espaça uniformemente os itens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+    margin-bottom: 20px; /* Espaço entre as seções */
+}
+
+/* Estilo para o texto dos seguros */
+.insurance-text {
+    flex: 1; /* Permite que o texto ocupe espaço restante */
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+/* Ajusta o layout para telas menores */
+@media (max-width: 768px) {
+    .insurance-section {
+        flex-direction: column; /* Empilha texto e imagem em dispositivos móveis */
+        align-items: flex-start; /* Alinha itens à esquerda */
+    }
+
+    .insurance-text {
+        margin-right: 0; /* Remove a margem direita quando empilhado */
+        margin-bottom: 10px; /* Adiciona espaço inferior entre o texto e a imagem */
+    }
+}
